@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionCell" customModule="technicalTestMVP" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SWE-R1-y1t" customClass="TransactionCell" customModule="technicalTestMVP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SWE-R1-y1t" id="bUQ-A4-gIh">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyL-On-CAT">
+                        <rect key="frame" x="20" y="9.6666666666666643" width="288.66666666666669" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="1XY-6y-BOr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDR-fC-nnn">
+                        <rect key="frame" x="328.66666666666669" y="9.6666666666666643" width="41.333333333333314" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="TM4-yF-Mtb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WDR-fC-nnn" secondAttribute="trailing" constant="20" id="3FD-6a-Dbb"/>
+                    <constraint firstItem="WDR-fC-nnn" firstAttribute="centerY" secondItem="bUQ-A4-gIh" secondAttribute="centerY" id="8yx-0x-y7U"/>
+                    <constraint firstItem="MyL-On-CAT" firstAttribute="leading" secondItem="bUQ-A4-gIh" secondAttribute="leading" constant="20" id="FBn-bs-zq1"/>
+                    <constraint firstItem="WDR-fC-nnn" firstAttribute="leading" secondItem="MyL-On-CAT" secondAttribute="trailing" constant="20" id="kId-b7-5LY"/>
+                    <constraint firstItem="MyL-On-CAT" firstAttribute="centerY" secondItem="bUQ-A4-gIh" secondAttribute="centerY" id="m5Q-Zj-HiX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="conceptTransaction" destination="MyL-On-CAT" id="V3p-bz-U8q"/>
+                <outlet property="quantityTransaction" destination="WDR-fC-nnn" id="Zdu-MW-HoK"/>
+            </connections>
+            <point key="canvasLocation" x="818" y="-11"/>
+        </tableViewCell>
+    </objects>
+</document>

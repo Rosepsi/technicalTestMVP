@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		4CBCBEED295433AD00683D2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCBEEC295433AD00683D2A /* AppDelegate.swift */; };
 		4CBCBEEF295433AD00683D2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCBEEE295433AD00683D2A /* SceneDelegate.swift */; };
-		4CBCBEF1295433AD00683D2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCBEF0295433AD00683D2A /* ViewController.swift */; };
-		4CBCBEF4295433AD00683D2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCBEF2295433AD00683D2A /* Main.storyboard */; };
+		4CBCBEF1295433AD00683D2A /* TransactionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCBEF0295433AD00683D2A /* TransactionsPresenter.swift */; };
 		4CBCBEF6295433AF00683D2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCBEF5295433AF00683D2A /* Assets.xcassets */; };
 		4CBCBEF9295433AF00683D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCBEF7295433AF00683D2A /* LaunchScreen.storyboard */; };
 		4CBCBF04295433B000683D2A /* technicalTestMVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCBF03295433B000683D2A /* technicalTestMVPTests.swift */; };
 		4CBCBF0E295433B000683D2A /* technicalTestMVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCBF0D295433B000683D2A /* technicalTestMVPUITests.swift */; };
 		4CBCBF10295433B000683D2A /* technicalTestMVPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCBF0F295433B000683D2A /* technicalTestMVPUITestsLaunchTests.swift */; };
+		4CBCBF222954387400683D2A /* TransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCBF212954387400683D2A /* TransactionsModel.swift */; };
+		4CBCBF24295438A900683D2A /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCBF23295438A900683D2A /* TransactionsView.swift */; };
+		4CBCBF2929543B3B00683D2A /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCBF2729543B3B00683D2A /* TransactionCell.swift */; };
+		4CBCBF2A29543B3B00683D2A /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCBF2829543B3B00683D2A /* TransactionCell.xib */; };
+		4CBCBF2C2954421100683D2A /* TransactionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCBF2B2954421100683D2A /* TransactionsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +43,7 @@
 		4CBCBEE9295433AD00683D2A /* technicalTestMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = technicalTestMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBCBEEC295433AD00683D2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CBCBEEE295433AD00683D2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4CBCBEF0295433AD00683D2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4CBCBEF3295433AD00683D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CBCBEF0295433AD00683D2A /* TransactionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsPresenter.swift; sourceTree = "<group>"; };
 		4CBCBEF5295433AF00683D2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CBCBEF8295433AF00683D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CBCBEFA295433AF00683D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		4CBCBF09295433B000683D2A /* technicalTestMVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = technicalTestMVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBCBF0D295433B000683D2A /* technicalTestMVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = technicalTestMVPUITests.swift; sourceTree = "<group>"; };
 		4CBCBF0F295433B000683D2A /* technicalTestMVPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = technicalTestMVPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4CBCBF212954387400683D2A /* TransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsModel.swift; sourceTree = "<group>"; };
+		4CBCBF23295438A900683D2A /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		4CBCBF2729543B3B00683D2A /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
+		4CBCBF2829543B3B00683D2A /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
+		4CBCBF2B2954421100683D2A /* TransactionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +109,9 @@
 			children = (
 				4CBCBEEC295433AD00683D2A /* AppDelegate.swift */,
 				4CBCBEEE295433AD00683D2A /* SceneDelegate.swift */,
-				4CBCBEF0295433AD00683D2A /* ViewController.swift */,
-				4CBCBEF2295433AD00683D2A /* Main.storyboard */,
+				4CBCBF1D2954384700683D2A /* Models */,
+				4CBCBF1E2954384E00683D2A /* Presenters */,
+				4CBCBF1F2954385400683D2A /* Views */,
 				4CBCBEF5295433AF00683D2A /* Assets.xcassets */,
 				4CBCBEF7295433AF00683D2A /* LaunchScreen.storyboard */,
 				4CBCBEFA295433AF00683D2A /* Info.plist */,
@@ -125,6 +134,33 @@
 				4CBCBF0F295433B000683D2A /* technicalTestMVPUITestsLaunchTests.swift */,
 			);
 			path = technicalTestMVPUITests;
+			sourceTree = "<group>";
+		};
+		4CBCBF1D2954384700683D2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CBCBF212954387400683D2A /* TransactionsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4CBCBF1E2954384E00683D2A /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				4CBCBEF0295433AD00683D2A /* TransactionsPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		4CBCBF1F2954385400683D2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CBCBF23295438A900683D2A /* TransactionsView.swift */,
+				4CBCBF2729543B3B00683D2A /* TransactionCell.swift */,
+				4CBCBF2829543B3B00683D2A /* TransactionCell.xib */,
+				4CBCBF2B2954421100683D2A /* TransactionsView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +269,8 @@
 			files = (
 				4CBCBEF9295433AF00683D2A /* LaunchScreen.storyboard in Resources */,
 				4CBCBEF6295433AF00683D2A /* Assets.xcassets in Resources */,
-				4CBCBEF4295433AD00683D2A /* Main.storyboard in Resources */,
+				4CBCBF2C2954421100683D2A /* TransactionsView.xib in Resources */,
+				4CBCBF2A29543B3B00683D2A /* TransactionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CBCBEF1295433AD00683D2A /* ViewController.swift in Sources */,
+				4CBCBEF1295433AD00683D2A /* TransactionsPresenter.swift in Sources */,
 				4CBCBEED295433AD00683D2A /* AppDelegate.swift in Sources */,
+				4CBCBF2929543B3B00683D2A /* TransactionCell.swift in Sources */,
+				4CBCBF24295438A900683D2A /* TransactionsView.swift in Sources */,
 				4CBCBEEF295433AD00683D2A /* SceneDelegate.swift in Sources */,
+				4CBCBF222954387400683D2A /* TransactionsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +337,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4CBCBEF2295433AD00683D2A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CBCBEF3295433AD00683D2A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4CBCBEF7295433AF00683D2A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +474,6 @@
 				INFOPLIST_FILE = technicalTestMVP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +501,6 @@
 				INFOPLIST_FILE = technicalTestMVP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
