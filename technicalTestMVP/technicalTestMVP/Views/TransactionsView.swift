@@ -7,7 +7,11 @@
 
 import UIKit
 
-class TransactionsView : UIViewController {
+protocol TransactionsView {
+    func reLoadTransactions ()
+}
+
+class TransactionsViewController : UIViewController, TransactionsView {
     
     @IBOutlet weak var tableTransactions : UITableView!
     lazy var presenter = TransactionsPresenter(view: self)
@@ -26,7 +30,7 @@ class TransactionsView : UIViewController {
     }
 }
 
-extension TransactionsView : UITableViewDelegate, UITableViewDataSource {
+extension TransactionsViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter.transactions.count
     }

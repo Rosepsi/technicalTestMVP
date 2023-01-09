@@ -11,48 +11,44 @@ import XCTest
 final class technicalTestMVPTests : XCTestCase {
     
     let networkManager = NetworkManagerMock()
+    let transactionView = TransactionViewMock ()
     var sut: TransactionsPresenter!
     
     // esta funcion se llama ANTES de cada test (para prepararlo)
     override func setUp() {
         super.setUp()
-        sut = TransactionsPresenter (networkManager: networkManager)
+        sut = TransactionsPresenter (view: transactionView, networkManager: networkManager)
     }
     
     // esta funcion se llama DESPUES de cada test (para limpiar o dejar preparado el siguiente)
+    
     override func tearDown() {
         super.tearDown()
-        networkManager.forceError = false // dejamos el mock en su estado original
+        // dejamos el mock en su estado original
+        networkManager.forceError = false
+        transactionView.flag = false
+        transactionView.expectation = nil
     }
     
-    func testGetFoodResultPositive () {
+    func testLoadTransactionEmpty () {
         // Given
-        let searchtest = "cereal" // probamos un valor que sabemos que funcionará
-        sut.completionSearch = { results in
-            // Then
-            XCTAssert(results.isEmpty == false)
-        }
+        networkManager.forceError = true
+        let expectation = self.expectation(description: "Transaction")
+        transactionView.expectation = expectation
         // When
-        sut.getFoodVM(text: searchtest)
+        sut.loadTransactions()
+        // Then
+        waitForExpectations(timeout: 1, handler: nil)
+        XCTAssertEqual (sut.transactions.isEmpty,true)
     }
-    func testGetFoodResultNegative () {
+    func testLoadTransactionNoEmpty () {
         // Given
-        let searchtest = "cereal" // probamos un valor que sabemos que funcionará
-        sut.completionSearch = { results in
-            // Then
-            XCTAssert(results.isEmpty == false)
-        }
+        let expectation = self.expectation(description: "Transaction")
+        transactionView.expectation = expectation
         // When
-        sut.getFoodVM(text: searchtest)
-    }
-    func testGetFoodResultFail () {
-        // Given
-        let searchtest = "cereal" // probamos un valor que sabemos que funcionará
-        sut.completionSearch = { results in
-            // Then
-            XCTAssert(results.isEmpty == false)
-        }
-        // When
-        sut.getFoodVM(text: searchtest)
+        sut.loadTransactions()
+        // Then
+        waitForExpectations(timeout: 1, handler: nil)
+        XCTAssertEqual (sut.transactions.isEmpty,false)
     }
 }

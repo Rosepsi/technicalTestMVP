@@ -10,6 +10,7 @@
 		0957F4EF6C12A26628794495 /* Pods_technicalTestMVPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C47D6BB4851923101A4285 /* Pods_technicalTestMVPTests.framework */; };
 		438E4C1831803B26530442E2 /* Pods_technicalTestMVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10094607E871929EF66609C9 /* Pods_technicalTestMVP.framework */; };
 		4C0D7544296427EB00352876 /* NetworkManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0D7543296427EB00352876 /* NetworkManagerMock.swift */; };
+		4CA9F583296BDA08009AB7D6 /* TransactionViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA9F582296BDA08009AB7D6 /* TransactionViewMock.swift */; };
 		4CBCBEED295433AD00683D2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCBEEC295433AD00683D2A /* AppDelegate.swift */; };
 		4CBCBEEF295433AD00683D2A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCBEEE295433AD00683D2A /* SceneDelegate.swift */; };
 		4CBCBEF1295433AD00683D2A /* TransactionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCBEF0295433AD00683D2A /* TransactionsPresenter.swift */; };
@@ -51,6 +52,7 @@
 		33D30CD2F0DD3BAF67DD1A64 /* Pods-technicalTestMVP-technicalTestMVPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-technicalTestMVP-technicalTestMVPUITests.debug.xcconfig"; path = "Target Support Files/Pods-technicalTestMVP-technicalTestMVPUITests/Pods-technicalTestMVP-technicalTestMVPUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3A5E9B5D14EC5209E4F09FF5 /* Pods-technicalTestMVPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-technicalTestMVPTests.release.xcconfig"; path = "Target Support Files/Pods-technicalTestMVPTests/Pods-technicalTestMVPTests.release.xcconfig"; sourceTree = "<group>"; };
 		4C0D7543296427EB00352876 /* NetworkManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerMock.swift; sourceTree = "<group>"; };
+		4CA9F582296BDA08009AB7D6 /* TransactionViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewMock.swift; sourceTree = "<group>"; };
 		4CBCBEE9295433AD00683D2A /* technicalTestMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = technicalTestMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBCBEEC295433AD00683D2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CBCBEEE295433AD00683D2A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				4CBCBF03295433B000683D2A /* technicalTestMVPTests.swift */,
+				4CA9F582296BDA08009AB7D6 /* TransactionViewMock.swift */,
 				4C0D7543296427EB00352876 /* NetworkManagerMock.swift */,
 			);
 			path = technicalTestMVPTests;
@@ -465,6 +468,7 @@
 			files = (
 				4C0D7544296427EB00352876 /* NetworkManagerMock.swift in Sources */,
 				4CBCBF04295433B000683D2A /* technicalTestMVPTests.swift in Sources */,
+				4CA9F583296BDA08009AB7D6 /* TransactionViewMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

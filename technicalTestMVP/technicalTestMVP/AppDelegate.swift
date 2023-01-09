@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setup () {
-        let rootController = TransactionsView(nibName: nil, bundle: nil)
+        let rootController = TransactionsViewController(nibName: nil, bundle: nil)
         window?.rootViewController = rootController
         window?.makeKeyAndVisible()
     }
