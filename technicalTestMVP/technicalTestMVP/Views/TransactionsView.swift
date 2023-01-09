@@ -10,7 +10,7 @@ import UIKit
 class TransactionsView : UIViewController {
     
     @IBOutlet weak var tableTransactions : UITableView!
-    weak var presenter : TransactionsPresenter?
+    lazy var presenter = TransactionsPresenter(view: self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,20 +18,35 @@ class TransactionsView : UIViewController {
         tableTransactions.dataSource = self
         tableTransactions.tableFooterView = UIView()
         tableTransactions.register(UINib (nibName: "TransactionCell", bundle: nil), forCellReuseIdentifier: "reusableTransactionCell")
+        presenter.loadTransactions()
+    }
+    
+    func reLoadTransactions () {
+        tableTransactions.reloadData()
     }
 }
 
 extension TransactionsView : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        0
+        return presenter.transactions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reusableTransactionCell") as! TransactionCell
+        let transactions = presenter.transactions
+        let transactionCell = transactions [indexPath.row]
+        cell.conceptTransaction.text = transactionCell.transactionDescription
+        cell.quantityTransaction.text = String (transactionCell.amount + (transactionCell.fee ?? 0))
+        if transactionCell.amount > 0 {
+            cell.quantityTransaction.textColor = .green
+        } else {
+            cell.quantityTransaction.textColor = .red
+        }
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
     }
-    
 }
+    

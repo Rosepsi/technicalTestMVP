@@ -11,12 +11,7 @@ import UIKit
  List to do:
  
  - Requisitos:
-    - Parte superior última transacción
-    - Resto de transacciones ordenadas por fecha
     - Total cada transacción quitando comisión
-    - Verde ingresos / Rojo gastos
-    - No transacción con formato inválido
-    - Transacción más reciente con el mismo id
     - Comentarios
  
  - Una pantalla con tabla
@@ -37,8 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setup () {
-        let rootController = TransactionsPresenter ()
-        window?.rootViewController = rootController.view
+        let rootController = TransactionsView(nibName: nil, bundle: nil)
+        window?.rootViewController = rootController
         window?.makeKeyAndVisible()
     }
 
